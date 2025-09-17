@@ -269,7 +269,7 @@ const MaterialRequest = () => {
 
                           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 pt-3 sm:pt-4 border-t border-border">
                             <div className="text-xs sm:text-sm text-muted-foreground">
-                              วันที่เบิก:{" "}
+                              วันที่เบิก:
                               {new Date(request.request_date).toLocaleDateString("th-TH")}
                             </div>
                             <div className="flex flex-col xs:flex-row gap-2 sm:gap-2">

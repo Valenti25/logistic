@@ -203,6 +203,7 @@ const MaterialRequestForm = ({ children }: MaterialRequestFormProps) => {
             <div className="space-y-2">
               <Label htmlFor="request_date">วันที่เบิก</Label>
               <Input
+              className="p-1 mr-3"
                 id="request_date"
                 type="date"
                 value={formData.request_date}

@@ -629,7 +629,7 @@ const ProgressUpdate = () => {
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="update_date">วันที่อัปเดต</Label>
-                <Input id="update_date" type="date" value={form.update_date} onChange={(e) => setForm((f) => ({ ...f, update_date: e.target.value }))} />
+                <Input className=" w-full mx-auto" id="update_date" type="date" value={form.update_date} onChange={(e) => setForm((f) => ({ ...f, update_date: e.target.value }))} />
               </div>
             </div>
 

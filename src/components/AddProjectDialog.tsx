@@ -139,10 +139,11 @@ const AddProjectDialog = ({ children }: AddProjectDialogProps) => {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
+          <div className="grid gap-1 grid-cols-2">
+            <div className="space-y-2 ">
               <Label htmlFor="start_date">วันที่เริ่ม</Label>
               <Input
+              className="p-1"
                 id="start_date"
                 type="date"
                 value={formData.start_date}
@@ -150,9 +151,10 @@ const AddProjectDialog = ({ children }: AddProjectDialogProps) => {
                 required
               />
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <Label htmlFor="end_date">วันที่สิ้นสุด</Label>
               <Input
+              className="p-1"
                 id="end_date"
                 type="date"
                 value={formData.end_date}
