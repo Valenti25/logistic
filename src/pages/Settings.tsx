@@ -400,7 +400,7 @@ const Settings = () => {
                         การจัดการไฟล์สำรอง
                       </h3>
 
-                      <div className="flex gap-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Button variant="outline">
                           <Download className="mr-2 h-4 w-4" />
                           ดาวน์โหลดข้อมูลสำรอง
@@ -436,7 +436,7 @@ const Settings = () => {
               </TabsContent>
 
               {/* System Settings */}
-              <TabsContent value="system" className="space-y-6">
+              <TabsContent value="system" className="space-y-6 ">
                 <Card className="bg-gradient-card shadow-card-custom border-0">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
@@ -478,7 +478,7 @@ const Settings = () => {
                     <div className="space-y-4">
                       <h3 className="text-lg font-medium">การบำรุงรักษา</h3>
 
-                      <div className="flex gap-4">
+                      <div className="grid-cols-1 md:grid-cols-2 gap-4">
                         <Button variant="outline">
                           <FileText className="mr-2 h-4 w-4" />
                           ตรวจสอบระบบ
