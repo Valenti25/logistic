@@ -123,8 +123,8 @@ type TeamMemberRow = {
   experience: string | null;
   avatar_url: string | null;
   last_update: string | null; // date (YYYY-MM-DD)
-  created_at: string | null;
-  updated_at: string | null;
+  // created_at: string | null;
+  // updated_at: string | null;
 };
 
 /* ===================== UI Types ===================== */
@@ -142,7 +142,7 @@ export type TeamMember = {
   avatar_url?: string | null;
   last_update: string | null;
   created_at?: string | null;
-  updated_at?: string | null;
+  // updated_at?: string | null;
 };
 
 /* ===================== UI Helpers ===================== */
@@ -202,7 +202,7 @@ export default function TeamManagement() {
     avatar_url: null,
     last_update: "",
     created_at: null,
-    updated_at: null,
+    // updated_at: null,
   };
   const [form, setForm] = useState<TeamMember>(emptyForm);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -242,8 +242,8 @@ export default function TeamManagement() {
     experience: row.experience ?? "",
     avatar_url: row.avatar_url,
     last_update: row.last_update,
-    created_at: row.created_at,
-    updated_at: row.updated_at,
+    // created_at: row.created_at,
+    // updated_at: row.updated_at,
   });
 
   const mapUiToRow = (ui: TeamMember): TeamMemberRow => ({
@@ -259,8 +259,8 @@ export default function TeamManagement() {
     experience: ui.experience || null,
     avatar_url: ui.avatar_url ?? null,
     last_update: normalizeDate(ui.last_update),
-    created_at: ui.created_at ?? null,
-    updated_at: ui.updated_at ?? null,
+    // created_at: ui.created_at ?? null,
+    // updated_at: ui.updated_at ?? null,
   });
 
   const fetchMembers = async (): Promise<void> => {
@@ -908,7 +908,7 @@ export default function TeamManagement() {
                                 <span className="truncate">{member.email}</span>
                               </div>
                               <div className="flex items-center gap-2">
-                                <Calendar className="h-4 w-4 text-muted-foreground shrink-0" />
+                                <CalendarIcon className="h-4 w-4 text-muted-foreground shrink-0" />
                                 <span className="truncate">
                                   เริ่มงาน: {member.join_date || "-"}
                                 </span>
